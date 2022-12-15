@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Nerko+One&family=Poppins:ital,wght@0,200;0,400;0,500;1,700&family=Zen+Dots&display=swap'); 
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#00000080,#00000080),url(../image/Buildings\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.container{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.icon{
+    font-size: 40px;
+    margin: 15px;
+    color: transparent;
+    background: linear-gradient(yellow, rgb(0, 225, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.icon:hover{
+    transform: scale(1.5);
+}
+.heading{
+    font-weight: 700;
+    font-size: 35px;
+    margin: 5px;
+}
+.para{
+    margin: 5px auto 40px;
+}
+.timer{
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    border: 1px solid rgb(174, 174, 174);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+input:focus{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px rgb(0, 195, 255);
+}
+.timer .box{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+.box h2{
+    font-size: 50px;
+}
+.colon{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom:25px ;
+}
+.email-details{
+    margin: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.email-details input{
+    width: 300px;
+    padding: 10px;
+    padding-left: 20px;
+    outline: none;
+    border-radius:20px;
+    border: 1px solid grey;
+    background: transparent;
+}
+input::placeholder{
+    color: grey;
+    letter-spacing: 1px;
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    background: linear-gradient(200deg,yellow, rgb(0, 225, 255));
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    letter-spacing: .8px;
+}
+.btn:hover{
+    color: rgb(249, 249, 249);
+    background: transparent;
+    box-shadow: 0px 0px 5px rgb(0, 195, 255);
+}
+
+@media (max-width:700px){
+    .container{
+        width: 100%;
+    }
+    .timer{
+        width: 90%;
+        gap: 5px;
+        height: 130px;
+    }
+    .box h2{
+        font-size: 30px;
+    }
+    .colon{
+        font-size: 30px;
+    }
+}

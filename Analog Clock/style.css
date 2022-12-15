@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.analog-clock{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(250, 209, 87);
+    border-radius: 50%;
+    border: 15px ridge rgb(218, 79, 9);
+    position: relative;
+}
+.analog-clock::before{
+    content: "Dear Analog";
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 22%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-family: verdana;
+    font-size: 20px;
+    font-weight: bold;
+}
+.analog-clock::after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.numbers{
+    position: absolute;
+    font-size: 25px;
+    top: 0;
+    font-family: verdana;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+    .number-1{transform: rotate(30deg);}
+    .number-2{transform: rotate(60deg);}
+    .number-3{transform: rotate(90deg);}
+    .number-4{transform: rotate(120deg);}
+    .number-5{transform: rotate(150deg);}
+    .number-6{transform: rotate(180deg);}
+    .number-7{transform: rotate(210deg);}
+    .number-8{transform: rotate(240deg);}
+    .number-9{transform: rotate(270deg);}
+    .number-10{transform: rotate(300deg);}
+    .number-11{transform: rotate(330deg);}
+
+.needle{
+    --rotation:0;
+    position: absolute;
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+    height: 42%;
+    left: 50%;
+    bottom: 50%;
+    transform-origin: bottom;
+    transform: translateX(-5px) rotate(calc(var(--rotation)*1deg));
+    border: 1px solid red;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.sec{
+    background-color: rgb(255, 0, 0);
+    width: 3px;
+    height: 42%;
+}
+.min{
+    width: 7px;
+    height: 35%;
+    background-color: rgb(255, 132, 0);
+}
+.hrs{
+    width: 7px;
+    height: 35%;
+    background-color: rgb(255, 132, 0);
+}

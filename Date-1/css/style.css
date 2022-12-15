@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Nerko+One&family=Poppins:ital,wght@0,200;0,400;0,500;1,700&family=Zen+Dots&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/Building\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+.head-para{
+    font-size: 12px;
+}
+.heading{
+    font-family: 'Inspiration', cursive;
+    font-size: 50px;
+    margin-top: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color:transparent;
+    background: linear-gradient(red,rgb(0, 162, 255), rgb(255, 204, 0), rgb(255, 0, 166));
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#box{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+#box h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(red, rgb(255, 0, 166));
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#box small{
+    font-size: 10px;
+}
+
+@media (min-width:576px){
+    .heading{
+        font-size: 90px;
+    }
+    .head-para{
+        font-size: 18px;
+    }
+    #box{
+        width: 70px;
+        height: 70px;
+    }
+    #box h1{
+        font-size: 30px;
+    }
+    #box small{
+        font-size: 15px;
+    }  
+}
+@media (min-width:768px){
+    .heading{
+        font-size: 130px;
+    }
+    .head-para{
+        font-size: 25px;
+    }
+    #box{
+        width: 100px;
+        height: 100px;
+    }
+    #box h1{
+        font-size: 40px;
+    }
+    #box small{
+        font-size: 20px;
+    }
+}
